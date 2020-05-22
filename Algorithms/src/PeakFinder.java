@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class PeakFinder {
 	
@@ -48,15 +49,24 @@ public class PeakFinder {
 		//int arr[] = new int[10];
 		
 		PeakFinder pf = new PeakFinder();
+		Scanner sc = new Scanner(System.in);
 		
-		int[] arr = {2,5,3,67,3,89,3,8,0,4,2,67,9,6,8,43,678,34,76,32,76,23,76,98,5,32,32,54,657,32,32};
 		
-		System.out.println(arr.length);
+		RandomGenerator rg = new RandomGenerator();
+		
+		System.out.println("Enter the size of the array to test");
+		int size = sc.nextInt();
+		int [] arr = rg.randomArray(100, size);
+		
+//		int[] arr = {2,5,3,67,3,89,3,8,0,4,2,67,9,6,8,43,678,34,76,32,76,23,76,98,5,32,32,54,657,32,32};
+		
+	//	System.out.println(arr.length);
 		
 		//pf.peak(arr);
 		
 		System.out.println("So the array has "+pf.peak(arr)+ " peaks");
 		
+		sc.close();
 	}
 
 }
