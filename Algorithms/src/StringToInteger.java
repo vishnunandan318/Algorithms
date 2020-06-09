@@ -28,6 +28,11 @@ public class StringToInteger {
 		int answer = obj.number(haha);
 		
 		System.out.println(answer);
+		
+		
+		char emo = 54;
+		
+		System.out.println(emo);
 	}
 
 }
